@@ -9,6 +9,7 @@ import { PopupComponent } from './popup.component';
     <input #input value="Message">
     <button (click)="popup.showAsComponent(input.value)">Show as component</button>
     <button (click)="popup.showAsElement(input.value)">Show as element</button>
+    <popup-element [message]="'ww'"></popup-element>
   `,
 })
 export class AppComponent {
